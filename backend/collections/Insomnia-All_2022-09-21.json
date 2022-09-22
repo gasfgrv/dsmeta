@@ -1,0 +1,428 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2022-09-22T01:07:39.331Z",
+  "__export_source": "insomnia.desktop.app:v2022.5.1",
+  "resources": [
+    {
+      "_id": "req_5af82d9d0de545e4831700e0a9931283",
+      "parentId": "wrk_feac641153ff42d7bd6e7f59cb37423b",
+      "modified": 1662246800982,
+      "created": 1660828929819,
+      "url": "localhost:8080/get-user?username=",
+      "name": "New Request",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1660828929819,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_feac641153ff42d7bd6e7f59cb37423b",
+      "parentId": null,
+      "modified": 1660828929736,
+      "created": 1660828929736,
+      "name": "New Document",
+      "description": "",
+      "scope": "design",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_8ed2df8a985d440583138f96f7d90d00",
+      "parentId": "wrk_feac641153ff42d7bd6e7f59cb37423b",
+      "modified": 1662244694483,
+      "created": 1662244673976,
+      "url": "https://api.github.com/users/gasfgrv",
+      "name": "New Request",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1662244673976,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_wrk_feac641153ff42d7bd6e7f59cb37423bc10ab8e2",
+      "parentId": "fld_wrk_feac641153ff42d7bd6e7f59cb37423bc177c864",
+      "modified": 1662242412834,
+      "created": 1662242412834,
+      "url": "{{ base_url }}/especialidades/{{ id }}",
+      "name": "Recupera uma entidade pelo id",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "{{bearerToken}}",
+        "prefix": ""
+      },
+      "metaSortKey": -1662242412834,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_wrk_feac641153ff42d7bd6e7f59cb37423bc177c864",
+      "parentId": "wrk_feac641153ff42d7bd6e7f59cb37423b",
+      "modified": 1662242412854,
+      "created": 1662242412854,
+      "name": "Especialidade",
+      "description": "Crud de especialidades",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1662242412854,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_wrk_feac641153ff42d7bd6e7f59cb37423b9990dcfa",
+      "parentId": "fld_wrk_feac641153ff42d7bd6e7f59cb37423bc177c864",
+      "modified": 1662242412840,
+      "created": 1662242412840,
+      "url": "{{ base_url }}/especialidades/{{ id }}",
+      "name": "Altera uma especialidade",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"descricao\": \"string\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "{{bearerToken}}",
+        "prefix": ""
+      },
+      "metaSortKey": -1662242412840,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_wrk_feac641153ff42d7bd6e7f59cb37423bdd34f5df",
+      "parentId": "fld_wrk_feac641153ff42d7bd6e7f59cb37423bc177c864",
+      "modified": 1662242412844,
+      "created": 1662242412844,
+      "url": "{{ base_url }}/especialidades/{{ id }}",
+      "name": "Recupera uma entidade pelo id",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "{{bearerToken}}",
+        "prefix": ""
+      },
+      "metaSortKey": -1662242412844,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_wrk_feac641153ff42d7bd6e7f59cb37423be2950e1b",
+      "parentId": "fld_wrk_feac641153ff42d7bd6e7f59cb37423bc177c864",
+      "modified": 1662242412847,
+      "created": 1662242412847,
+      "url": "{{ base_url }}/especialidades",
+      "name": "Cria uma nova especialidade",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"descricao\": \"string\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {
+        "type": "bearer",
+        "token": "{{bearerToken}}",
+        "prefix": ""
+      },
+      "metaSortKey": -1662242412847,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_wrk_feac641153ff42d7bd6e7f59cb37423badc49603",
+      "parentId": "fld_wrk_feac641153ff42d7bd6e7f59cb37423bc177c864",
+      "modified": 1662242412851,
+      "created": 1662242412851,
+      "url": "{{ base_url }}/especialidades",
+      "name": "Recupera todas as especialidades",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {
+        "type": "bearer",
+        "token": "{{bearerToken}}",
+        "prefix": ""
+      },
+      "metaSortKey": -1662242412851,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_66c1e8e411a14bb38fd21f19d483b926",
+      "parentId": "wrk_509edce0695d40c3bfca9f8403d387e2",
+      "modified": 1663793044874,
+      "created": 1663791622126,
+      "url": "{{ _.url }}/sales",
+      "name": "Sales",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_53d193ae019449aca85be0b9df5a2098",
+          "name": "minDate",
+          "value": "2022-01-01",
+          "description": "",
+          "disabled": false
+        },
+        {
+          "id": "pair_ef408aeb829f41df9b53fe6780730652",
+          "name": "maxDate",
+          "value": "2022-03-31",
+          "description": "",
+          "disabled": false
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1663791622126,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_509edce0695d40c3bfca9f8403d387e2",
+      "parentId": null,
+      "modified": 1663788271771,
+      "created": 1663788271771,
+      "name": "dsmeta",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_720b4e6edc974d2f8ec7df68baa60bfd",
+      "parentId": "wrk_509edce0695d40c3bfca9f8403d387e2",
+      "modified": 1663796011257,
+      "created": 1663794912953,
+      "url": "{{ _.url }}/sales/53/notification",
+      "name": "Notification",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1663018148051,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_6b63154e7147488049196c35aee1f31052bb3c97",
+      "parentId": "wrk_feac641153ff42d7bd6e7f59cb37423b",
+      "modified": 1660828929791,
+      "created": 1660828929791,
+      "name": "Base Environment",
+      "data": {
+        "base_url": "{{ scheme }}://{{ host }}{{ base_path }}"
+      },
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1660828929791,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_6b63154e7147488049196c35aee1f31052bb3c97",
+      "parentId": "wrk_feac641153ff42d7bd6e7f59cb37423b",
+      "modified": 1660828929807,
+      "created": 1660828929807,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_2c4cc4c2c1f3419eaffdf4746477326a",
+      "parentId": "wrk_feac641153ff42d7bd6e7f59cb37423b",
+      "modified": 1663808770349,
+      "created": 1660828929770,
+      "fileName": "New Document",
+      "contents": "openapi: 3.0.1\ninfo:\n  title: API de consultório\n  description: API para controlar médico e suas especialidades dentro do consultário.\n  version: 0.0.1\n  termsOfService: https://mockapi.io\n  contact:\n    name: Suporte a Devs\n    email: contato@example.com\n    url: https://mockapi.io\n  license:\n    name: \"Licença: GPLv3\"\n    url: https://www.gnu.org/licenses/gpl-3.0.html\nexternalDocs:\n  description: Documentação burocrártica\n  url: https://mockapi.io\nservers: \n  - url: https://6096015d116f300174b29bb.mockapi.io/\n    description: API de teste\ntags:\n  - name: Especialidade\n    description: Crud de especialidades\n    externalDocs:\n      description: Saiba mais\n      url: http://swagger.io\npaths:\n  /especialidades:\n    get:\n      tags:\n        - Especialidade\n      summary: Recupera todas as especialidades\n      responses:\n        '200':\n          description: Sucesso\n          content:\n            application/json:\n              schema:\n                $ref: \"#/components/schemas/Especialidades\"\n    post:\n      tags:\n        - Especialidade\n      summary: Cria uma nova especialidade\n      description: Através desse endpoint você pode criar nova especialidades\n      requestBody:\n        content:\n          application/json:\n            schema:\n              type: object\n              properties:\n                descricao:\n                  type: string\n      responses:\n        '201':\n          description: Sucesso\n          content:\n            application/json:\n              schema:\n                $ref: \"#/components/schemas/Especialidade\"\n  /especialidades/{id}:\n    parameters: \n      - name: id\n        in: path\n        schema:\n          type: integer\n        required: true\n    get:\n      tags:\n        - Especialidade\n      summary: Recupera uma entidade pelo id\n      responses:\n        '200':\n          description: Sucesso\n          content:\n            application/json:\n              schema:\n                $ref: \"#/components/schemas/Especialidade\"\n        '404':\n          $ref: \"#/components/responses/NotFound\"\n    put:\n      tags:\n        - Especialidade\n      summary: Altera uma especialidade\n      requestBody:\n        content:\n          application/json:\n            schema:\n              type: object\n              properties:\n                descricao:\n                  type: string\n      responses:\n        '200':\n          description: Sucesso\n          content:\n            application/json:\n              schema:\n                $ref: \"#/components/schemas/Especialidade\"\n        '404':\n          $ref: \"#/components/responses/NotFound\"\n    delete:\n      tags:\n        - Especialidade\n      summary: Recupera uma entidade pelo id\n      responses:\n        '204':\n          description: Sucesso\n        '404':\n          $ref: \"#/components/responses/NotFound\"\nsecurity: \n- auth: []\ncomponents:\n  schemas:\n    Especialidade:\n      type: object\n      properties:\n        id:\n          type: integer\n        descricao:\n          type: string\n    Especialidades:\n      type: array\n      items:\n        $ref: \"#/components/schemas/Especialidade\"\n  responses:\n    NotFound:\n      description: Especialidade não encontrada\n      content:\n        application/json:\n          example: \"Not Found\"\n  securitySchemes:\n    auth:\n      type: http\n      scheme: bearer\n      bearerFormat: JWT",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "uts_372884ecefbd40dca61e413fe505aa40",
+      "parentId": "wrk_feac641153ff42d7bd6e7f59cb37423b",
+      "modified": 1660828929826,
+      "created": 1660828929826,
+      "name": "Example Test Suite",
+      "_type": "unit_test_suite"
+    },
+    {
+      "_id": "env_env_6b63154e7147488049196c35aee1f31052bb3c97_sub",
+      "parentId": "env_6b63154e7147488049196c35aee1f31052bb3c97",
+      "modified": 1662242412858,
+      "created": 1662242412858,
+      "name": "OpenAPI env",
+      "data": {
+        "scheme": "https",
+        "base_path": "",
+        "host": "6096015d116f300174b29bb.mockapi.io",
+        "bearerToken": "bearerToken"
+      },
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1662242412858,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_1d0c8efa22a632e7b4ffd70cd76be948b49e631e",
+      "parentId": "wrk_509edce0695d40c3bfca9f8403d387e2",
+      "modified": 1663791748378,
+      "created": 1663788271797,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": {},
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1663788271797,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_1d0c8efa22a632e7b4ffd70cd76be948b49e631e",
+      "parentId": "wrk_509edce0695d40c3bfca9f8403d387e2",
+      "modified": 1663788271799,
+      "created": 1663788271799,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_3eca7601458744b2b78b7e6ed6f8ef60",
+      "parentId": "wrk_509edce0695d40c3bfca9f8403d387e2",
+      "modified": 1663788271789,
+      "created": 1663788271789,
+      "fileName": "dsmeta",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_5e393abbe7ee4741bf79c90d6fe77b7e",
+      "parentId": "env_1d0c8efa22a632e7b4ffd70cd76be948b49e631e",
+      "modified": 1663797866542,
+      "created": 1663791756278,
+      "name": "dsmeta-env-local",
+      "data": {
+        "url": "http://localhost:8080"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "url"
+        ]
+      },
+      "color": "#7d69cb",
+      "isPrivate": false,
+      "metaSortKey": 1663791756278,
+      "_type": "environment"
+    },
+    {
+      "_id": "env_ec16d6ee67ca4ec296405aed911f3b64",
+      "parentId": "env_1d0c8efa22a632e7b4ffd70cd76be948b49e631e",
+      "modified": 1663808300498,
+      "created": 1663797869098,
+      "name": "dsmeta-env-heroku",
+      "data": {
+        "url": "https://dsmeta-gasfgrv.herokuapp.com"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "url"
+        ]
+      },
+      "color": "#f425ed",
+      "isPrivate": false,
+      "metaSortKey": 1663797869098,
+      "_type": "environment"
+    }
+  ]
+}
