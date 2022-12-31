@@ -45,6 +45,6 @@ public class SmsService {
         var to = new PhoneNumber(twilioPhoneTo);
         var from = new PhoneNumber(twilioPhoneFrom);
 
-        var messageToSend = Message.creator(to, from, message).create();
+        Message.creator(to, from, message).create();
     }
 }

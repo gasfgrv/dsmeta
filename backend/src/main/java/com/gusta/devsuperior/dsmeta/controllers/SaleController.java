@@ -27,7 +27,7 @@ public class SaleController {
                                                 @RequestParam(value = "maxDate", defaultValue = "") String maxDate,
                                                 Pageable pageable) {
 
-        var allSales = saleService.findSales(minDate, maxDate,pageable);
+        var allSales = saleService.findSales(minDate, maxDate, pageable);
 
         if (allSales.isEmpty()) {
             return ResponseEntity.notFound().build();
