@@ -1,0 +1,14 @@
+name: Build Backend
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  gerar-imagem:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Gerando imagem
+        run: docker build -t gustosilva/dsvendas-frontend-java backend/

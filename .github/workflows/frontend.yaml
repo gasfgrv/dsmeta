@@ -2,8 +2,9 @@ name: CI - Frontend
 
 on:
   push:
-    branches:
-      - "main"
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
 
 env:
   TEST_TAG: gustosilva/dsvendas-frontend-java:test
