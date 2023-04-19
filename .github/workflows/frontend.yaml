@@ -12,6 +12,7 @@ env:
 
 jobs:
   docker-build-and-push-frontend:
+    name: Docker - Build da imagem e push no Dockerhub
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,14 +29,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      
-      - name: Build and export to Docker
-        uses: docker/build-push-action@v4
-        with:
-          context: "{{defaultContext}}:frontend"
-          load: true
-          tags: ${{ env.TEST_TAG }}
-      
+
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
