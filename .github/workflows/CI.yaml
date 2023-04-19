@@ -41,6 +41,9 @@ jobs:
   docker-build-and-push-backend:
     name: Docker - Build da imagem e push no Dockerhub (Backend)
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -65,7 +68,7 @@ jobs:
           -Ddynamo.signingRegion=$SIGNING_REGION \
           -Ddynamo.accessKey=$ACCESS_KEY \
           -Ddynamo.secretKey=$SECRET_KEY \
-          --file "{{defaultContext}}:backend:pom.xml"
+          --file pom.xml
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
