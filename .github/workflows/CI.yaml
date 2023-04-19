@@ -49,7 +49,7 @@ jobs:
           username: ${{env.DOCKERHUB_USERNAME}}
           password: ${{env.DOCKERHUB_TOKEN}}
           repository: gustosilva/dsvendas-frontend-java
-          readme: "../README.md"
+          readme: "./README.md"
 
   docker-build-and-push-backend:
     name: Docker - Build da imagem e push no Dockerhub (Backend)
@@ -109,4 +109,4 @@ jobs:
           username: ${{env.DOCKERHUB_USERNAME}}
           password: ${{env.DOCKERHUB_TOKEN}}
           repository: gustosilva/dsvendas-backend-java
-          readme: "../README.md"
+          readme: "./README.md"
