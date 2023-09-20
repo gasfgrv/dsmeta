@@ -28,7 +28,9 @@ class DsmetaApplicationIntegrationTests {
         mockMvc.perform(get("/sales")
                         .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON)
                         .queryParam("page", "0")
-                        .queryParam("size", "10"))
+                        .queryParam("size", "10")
+                        .queryParam("minDate", "2021-06-27")
+                        .queryParam("maxDate", "2022-06-16"))
                 .andExpect(status().isOk());
     }
 
